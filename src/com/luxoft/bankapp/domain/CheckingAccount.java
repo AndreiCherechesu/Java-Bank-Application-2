@@ -35,7 +35,21 @@ public class CheckingAccount extends AbstractAccount {
 	public Currency getCurrency() {
 		return currency;
 	}
-	
+
+	public double getOverdraft() {
+		return overdraft;
+	}
+
+	public CheckingAccount setCurrency(Currency currency) {
+		this.currency = currency;
+		return this;
+	}
+
+	public CheckingAccount setOverdraft(double overdraft) {
+		this.overdraft = overdraft;
+		return this;
+	}
+
 	@Override
     public void withdraw(double value) throws OverdraftLimitExceededException {
         try {

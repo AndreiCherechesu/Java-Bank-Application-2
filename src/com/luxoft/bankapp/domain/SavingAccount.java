@@ -25,6 +25,11 @@ public class SavingAccount extends AbstractAccount {
 	public Currency getCurrency() {
 		return currency;
 	}
+
+	public SavingAccount setCurrency(Currency currency) {
+		this.currency = currency;
+		return this;
+	}
 	
 	@Override
 	public String toString() {
